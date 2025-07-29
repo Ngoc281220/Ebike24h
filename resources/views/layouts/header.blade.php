@@ -1,9 +1,9 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark bg-opacity-75 py-0 h-90">
   <div class="container-fluid">
     <div class="d-flex justify-content-between align-items-center w-100">
       <!-- Cột trái: Logo -->
       <div class="col-4">
-        <a class="navbar-brand" href="#">Navbar w/ text</a>
+        <a class="navbar-brand fs-1 fw-bold" href="#">EBIKE24H</a>
       </div>
 
       <!-- Cột giữa: Menu -->
@@ -31,15 +31,29 @@
 
       <!-- Cột phải: Text -->
       <div class="col-4 text-end">
-        <span class="navbar-text">
-          Navbar text with an inline element
-        </span>
+        <ul class="navbar-nav nav-right">
+          <li class="nav-item">
+            <a href="" class="nav-link px-1 mb-0">
+              <img src="{{ asset('/asset/image/VN-icon.png') }}" alt="Tiếng việt">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link px-1 mb-0">
+              <img src="{{ asset('/asset/image/US-icon.png') }}" alt="Tiếng việt">
+            </a>
+          </li>
+          <li>  
+            <a href="tel:0123456789" class="nav-link fw-bold text-uppercase px-4 h5 mb-0">
+              <i class="fas fa-phone-alt me-3"></i> 0123 456 789
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
 
     <!-- Toggle button vẫn giữ nguyên để hoạt động responsive -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
   </div>
 </nav>

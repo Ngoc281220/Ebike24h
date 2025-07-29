@@ -1,0 +1,30 @@
+.h-90 {
+    height: 90px !important;
+}
+
+video {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.video-overlay {
+    object-fit: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.card-order {
+    top: 50%;
+    transform: translateY(-50%);
+}
