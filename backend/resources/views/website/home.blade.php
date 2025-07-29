@@ -4,7 +4,11 @@
 
 @section('content')
 <div>
-    <video src="{{ asset('/asset/image/video.webm') }}" autoplay loop playsinline></video>
+    <video autoplay loop playsinline muted>
+        <source src="{{ asset('asset/image/video.webm') }}" type="video/webm">
+        Trình duyệt của bạn không hỗ trợ video.
+    </video>
+
     <div class="video-overlay">
         <div class="container">
             <div class="row">
@@ -114,6 +118,76 @@
                             </script>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="container pt-lg-5">
+            <div class="row row py-5 my-5">
+                <div class="col-lg-7 ps-lg-5 order-lg-last">
+                    <h4 class="text-danger text-uppercase fw-bold">Dịch vụ cho thuê</h4>
+                    <h1 class="text-uppercase fw-bold mb-4">Xe Máy Điện Vinfast Chuyên Nghiệp</h1>
+                    <p class="mb-5">Dịch vụ cho thuê xe máy điện VINFAST chuyên nghiệp tại thành phố Đà Nẵng. Việc lái xe máy điện khi đi du lịch Đà Nẵng sẽ giúp bạn chủ động hơn trong việc di chuyển cũng như tận hưởng bầu không khí trong lành, thoáng mát của "thành phố đáng sống nhất Việt Nam"</p>
+                    <div class="row">
+                        <div class="col-lg-6 mb-5">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-tags fa-2x"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="text-uppercase fw-bold">Mẫu Mã Đa Dạng</h5>
+                                    <p class="mb-0">Với các dòng xe máy điện từ trung đến cao cấp của VINFAST, giúp nâng cao trải nghiệm.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-newspaper fa-2x"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="text-uppercase fw-bold">Thủ Tục Nhanh Chóng</h5>
+                                    <p class="mb-0">Thủ tục đơn giản, nhanh chóng chỉ với giấy tờ tùy thân hoặc các giấy tờ liên quan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-credit-card fa-2x"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="text-uppercase fw-bold">Thanh Toán Linh Hoạt</h5>
+                                    <p class="mb-0">Nhiều hình thức thanh toán linh hoạt thông qua các giao thức online hoặc tiền mặt</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-tasks fa-2x"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="text-uppercase fw-bold">Giá Cả Hợp Lý</h5>
+                                    <p class="mb-0">Đa dạng về các hình thức cho thuê, theo giờ, theo ngày hoặc theo số KM đã sử dụng.</p>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="col-lg-12 footer-intro px-lg-0 mb-3 mb-lg-0">
+                        <div class="row">
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                <img width="100%" src="{{ asset('asset/image/intro-xe-dien-vinfast-2.jpg') }}" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <img width="100%" src="{{ asset('asset/image/intro-xe-dien-vinfast-1.jpg') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-first">
+                    <img class="img-banner" src="{{ asset('asset/image/banner.png') }}" alt="Xe điện Vinfast">
                 </div>
             </div>
         </div>

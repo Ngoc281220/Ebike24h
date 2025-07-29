@@ -28,3 +28,12 @@ video {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.img-banner {
+    max-width: 100%;
+}
+
+.footer-intro {
+    margin-left: -7rem;
+    border: 1.5rem solid #fff;
+}
